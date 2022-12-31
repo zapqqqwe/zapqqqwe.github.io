@@ -6,24 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇文章 | zapqqqwe的个人博客网站</title>
+  <title>Markdown | zapqqqwe的个人博客网站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#第一章，我的内容it">
+  <meta name="description" content="marddown学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇文章">
+<meta property="og:title" content="Markdown">
 <meta property="og:url" content="http://example.com/2022/12/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="zapqqqwe的个人博客网站">
-<meta property="og:description" content="#第一章，我的内容it">
+<meta property="og:description" content="marddown学习笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/path/to/img.jpg">
+<meta property="og:image" content="http://example.com/path/to/img.jpg">
+<meta property="og:image" content="http://example.com/2022/12/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/pic.png">
 <meta property="article:published_time" content="2022-12-30T11:41:07.000Z">
-<meta property="article:modified_time" content="2022-12-31T08:00:28.392Z">
+<meta property="article:modified_time" content="2022-12-31T10:41:36.010Z">
 <meta property="article:author" content="www">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/path/to/img.jpg">
   
     <link rel="alternative" href="/atom.xml" title="zapqqqwe的个人博客网站" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/assets/head.jpg">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
   <style type="text/css">
@@ -47,7 +51,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/head.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -60,6 +64,8 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+	        
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
@@ -111,13 +117,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/head.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
+			
+				
 			
 				
 			
@@ -140,12 +148,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -167,7 +177,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇文章
+      Markdown
     </h1>
   
 
@@ -180,9 +190,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!--bash declare:true-->
-<p>#第一章，我的内容<br>it<span id="more"></span>程序猿，</p>
-
+        <p>marddown学习笔记<span id="more"></span></p>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>##中间要有空格</p>
+<h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+<h2 id="这是一个标题"><a href="#这是一个标题" class="headerlink" title="这是一个标题"></a>这是一个标题</h2><ol>
+<li>这是第一行列表项</li>
+<li>这是第二行列表项</li>
+</ol>
+<p>给出一些例子代码：<br>return shell_exec(“echo $input | $markdown_script”);</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>有序列表<br>后面一定要接一个空格，为了美观可以用固定的缩进<br>列表项目可以包含多个段落，每个项目下的段落都必须缩进 1 个制表符：</p>
+<ol>
+<li>bird</li>
+<li>Mchale<br>无序列表</li>
+</ol>
+<ul>
+<li>red</li>
+<li>green</li>
+<li>blue<br>行首出现数字-句点-空白 加\ 与列表区分<br>1986. What a great season.</li>
+</ul>
+<h2 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h2><p>缩进 4 个空格或是 1 个制表符 为代码块<br>这是一个普通段落<br>    #这是代码<br>    tell application “Foo”<br>        beep<br>    end tell</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr>
+<h2 id="链接方式："><a href="#链接方式：" class="headerlink" title="链接方式："></a>链接方式：</h2><h3 id="行内式："><a href="#行内式：" class="headerlink" title="行内式："></a>行内式：</h3><p>方括号后面接着圆括号，若有titile,则网址后面双引号包含title</p>
+<p>This is <a href="http://example.com/" title="Title">an example</a> inline link.<br>​<br><a target="_blank" rel="noopener" href="http://example.net/">This link</a> has no title attribute.<br>链接到同样主机的资源利用相对路径<br>See my <a href="/about/">About</a> page for details.</p>
+<h3 id="参考式："><a href="#参考式：" class="headerlink" title="参考式："></a>参考式：</h3><p>链接文字的括号后面接上另一个方括号，第二个方括号里面要填入用以辨识链接的标记<br>接着，在文件的任意处，你可以把这个标记的链接内容定义出来：<br>链接辨别标签可以有字母、数字、空白和标点符号，但是并不区分大小写，因此下面两个链接是一样的：<br>参考式的链接其实重点不在于它比较好写，而是它比较好读，<br>[link text][a]<br>[link text][A]</p>
+<p>I get 10 times more traffic from [Google] [1] than from<br>[Yahoo] [2] or [MSN] [3].<br>​<br>[1]: <a target="_blank" rel="noopener" href="http://google.com/">http://google.com/</a>        “Google”<br>[2]: <a target="_blank" rel="noopener" href="http://search.yahoo.com/">http://search.yahoo.com/</a>  “Yahoo Search”<br>[3]: <a target="_blank" rel="noopener" href="http://search.msn.com/">http://search.msn.com/</a>    “MSN Search”</p>
+<h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p><em>single asterisks</em><br>​<br><strong>double asterisks</strong></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>如果要标记一小段行内代码，你可以用反引号把它包起来（&#96;&#96;&#96;），例如：<br>use the <code>print()</code> function<br>如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：<br><code>There is a literal backtick (`) here.</code></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><h3 id="行内式"><a href="#行内式" class="headerlink" title="行内式"></a>行内式</h3><p><img src="/path/to/img.jpg" alt="Alt text"><br>​<br><img src="/path/to/img.jpg" alt="Alt text" title="Optional title"><br>详细叙述如下：<br>一个惊叹号 !<br>接着一个方括号，里面放上图片的替代文字<br>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。</p>
+<h3 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h3><p>![Alt text][id]<br>「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：<br>[id]: url&#x2F;to&#x2F;image  “Optional title attribute”</p>
+<p>到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 &#96;&#96; 标签<br><img src="pic.png" alt="drawing" width="100"/></p>
+<h2 id="音乐-视频"><a href="#音乐-视频" class="headerlink" title="音乐 视频"></a>音乐 视频</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=554241732&auto=1&height=66"></iframe>
+<br></br>
+<iframe src="//player.bilibili.com/player.html?aid=649398793&bvid=BV1te4y157LF&high_quality=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
+" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
       
 
       
@@ -198,6 +246,11 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
