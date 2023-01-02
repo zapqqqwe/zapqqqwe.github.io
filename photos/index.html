@@ -165,7 +165,91 @@
 
    
    
- 
+  <!-- valine评论 -->
+  <div id="vcomments-box">
+      <div id="vcomments">
+      </div>
+  </div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <!-- <script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script> -->
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <!-- 评论背景 -->                                                         
+  <style>
+      #veditor{min-height: 10rem;
+          background-image: url(https://gitee.com/cungudafa/source/raw/master/img/gif/katon/pinkcoolpig.gif);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: right;
+          background-color: rgba(255,255,255,0);
+          resize: none;}
+  </style>
+  <!-- Valine配置 --> 
+  <script>
+      new Valine({
+          el: '#vcomments',
+      enableQQ: true,
+          app_id: 'ouV9RVxe71Vu4hdUP93QtOs1-gzGzoHsz',
+          app_key: 'laBz1asytkOHj9NfuZVJogqf',
+          path: window.location.pathname,
+          //notify: '',
+          //verify: '',
+          avatar: '/images/head.jpg',
+          placeholder: '给我的文章加点评论吧~',
+          recordIP: true,
+      
+      // 设置Bilibili表情包地址
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/XXXZhy/Blog_Image/valine_emoticon/', 
+      // 表情title和图片映射
+      emojiMaps: {
+        "墙角滑稽": "害怕滑稽.gif",
+        "仙女下凡": "仙女下凡.webp",
+        "听歌": "听歌.webp",
+        "嫌弃": "嫌弃.webp",
+        "害羞": "害羞.webp",
+        "彩虹滑稽": "彩虹滑稽.webp",
+        "快走": "快走.webp",
+        "扯脸": "扯脸.webp",
+        "摸脸": "摸脸.webp",
+        "流汗": "流汗.webp",
+        "滑滑板": "滑滑板.webp",
+        "点赞": "点赞.webp",
+        "转圈圈": "转圈圈.webp",
+        // ... 更多表情
+      } 	
+      });
+      const infoEle = document.querySelector('#vcomments .info');
+      if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+          infoEle.childNodes.forEach(function (item) {
+              item.parentNode.removeChild(item);
+          });
+      }
+  </script>
+  
+  <style>
+      #vcomments-box {
+          padding: 5px 30px;
+      }
+  
+      @media screen and (max-width: 800px) {
+          #vcomments-box {
+              padding: 5px 0px;
+          }
+      }
+  
+      #vcomments-box #vcomments {
+          background-color: #fff;
+      }
+  
+      .v .vlist .vcard .vh {
+          padding-right: 20px;
+      }
+  
+      .v .vlist .vcard {
+          padding-left: 10px;
+      }
+  </style>
+  
+   
    
   
 </article>
@@ -259,7 +343,7 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" href="/about">关于我</a>
     </li>
     
   </ul>
