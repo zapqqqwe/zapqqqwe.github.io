@@ -25,13 +25,11 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>web前端</category>
-        <category>web</category>
+        <category>备忘录</category>
       </categories>
       <tags>
-        <tag>jQuery</tag>
-        <tag>表格</tag>
-        <tag>表单验证</tag>
+        <tag>命令</tag>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -78,8 +76,11 @@
 <br></br>
 <iframe src="//player.bilibili.com/player.html?aid=649398793&bvid=BV1te4y157LF&high_quality=1" width="100%" height="360" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe>
 ]]></content>
+      <categories>
+        <category>备忘录</category>
+      </categories>
       <tags>
-        <tag>hello</tag>
+        <tag>语法</tag>
       </tags>
   </entry>
 </search>
