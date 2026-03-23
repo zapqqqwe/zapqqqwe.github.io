@@ -29,18 +29,17 @@
     <header class="site-header" data-reveal>
       <div class="container header-inner">
         <div class="brand">
-          <h1 class="name">Yubang Wang</h1>
-          <p class="subtitle">Researcher in embodied AI and agents</p>
+          <h1 class="name">lichenglin</h1>
+          <p class="subtitle">Blog · Notes · Research</p>
         </div>
 
         <nav class="nav" aria-label="Primary">
           <a href="#about">About</a>
+          <a href="#posts">Posts</a>
           <a href="#publications">Publications</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
-          <a href="https://no-518.github.io/no-518-blog/" target="_blank" rel="noreferrer"
-            >Blog</a
-          >
+          <a href="/archives/">Archives</a>
         </nav>
 
         <div class="social" aria-label="Social links">
@@ -107,9 +106,7 @@
 
           <a
             class="icon-link"
-            href="https://no-518.github.io/no-518-blog/"
-            target="_blank"
-            rel="noreferrer"
+            href="/archives/"
             aria-label="Blog"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -161,20 +158,139 @@
           <div class="about-text" data-reveal>
             <h2>About</h2>
             <p>
-              I am Chenglin Li, a fourth-year undergraduate student in the
-              School of Computer Science at Wuhan University.
+              I am <strong>Chenglin Li (李成林)</strong>. My research focuses on large
+              language models, video understanding, and agentic systems.
             </p>
-            <p>
-        I am currently a third-year Ph.D. student jointly supervised by Zhejiang University and the Shanghai Innovation Institute, advised by Prof. <strong>Jiaqi Wang</strong> and Prof. <strong>Yin Zhang</strong>.
-        More details about my research can be found on my
-        <a href="https://scholar.google.com/citations?user=7LlS58IAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">
-          Google Scholar profile
-        </a>.
-      </p>
-      <p>
-        My research focuses on intelligent agents and video agents.
-      </p>
 
+            <ul class="info-list" aria-label="Quick info">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:lichenglin@sii.edu.cn">lichenglin@sii.edu.cn</a>
+              </li>
+              <li><strong>Phone:</strong> 15264518356</li>
+              <li><strong>Born:</strong> 2001.03</li>
+            </ul>
+
+            <p class="muted">
+              I also write notes and research updates on my blog.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="cv" class="section" aria-label="CV">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2>CV</h2>
+            <p class="muted">Education, internships, and research.</p>
+          </div>
+
+          <div class="cv" data-reveal>
+            <h3>Education</h3>
+            <ol class="timeline" aria-label="Education timeline">
+              <li class="timeline-item" data-reveal>
+                <div class="when">2019.09 - 2023.06</div>
+                <div class="what">
+                  <h4>Northeastern University</h4>
+                  <p class="meta">B.S., Computer Science and Technology</p>
+                  <p class="meta">GPA 4.05/5 · Rank 13/221 · CET-4 561 · CET-6 479</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-reveal>
+                <div class="when">2023.09 - 2025.03</div>
+                <div class="what">
+                  <h4>Zhejiang University</h4>
+                  <p class="meta">M.S. (full-time), AI direction (LLMs, distillation, instruction data, reasoning)</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-reveal>
+                <div class="when">2025.09 - 2028.03</div>
+                <div class="what">
+                  <h4>Zhejiang University & Shanghai Innovation Institute</h4>
+                  <p class="meta">Ph.D. (full-time), AI (LLMs, video understanding, agents)</p>
+                  <p class="meta">(Ph.D. year 3)</p>
+                </div>
+              </li>
+            </ol>
+
+            <h3>Internships</h3>
+            <ol class="timeline" aria-label="Internships timeline">
+              <li class="timeline-item" data-reveal>
+                <div class="when">2023.06 - 2023.09</div>
+                <div class="what">
+                  <h4>Alibaba Quark · Offline System Strategy (Algorithm Intern)</h4>
+                  <p class="meta">Modeling “first-hand experience” signals for offline webpages; BERT-based text model; 75% accuracy on offline test set.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-reveal>
+                <div class="when">2023.10 - 2024.01</div>
+                <div class="what">
+                  <h4>Alibaba Aicheng · Enterprise Intelligence (Algorithm Intern)</h4>
+                  <p class="meta">SFT pipeline and evaluation; data augmentation and quality control; improved Qwen-14B to match Qwen-70B on internal eval; int8 deployment.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-reveal>
+                <div class="when">2025.02 - 2025.06</div>
+                <div class="what">
+                  <h4>ByteDance CapCut/Jianying · Video Intent Understanding (Algorithm Intern)</h4>
+                  <p class="meta">Built multimodal intent understanding pipeline; prompt engineering; decoding strategies to reduce hallucinations; visual token pruning.</p>
+                </div>
+              </li>
+
+              <li class="timeline-item" data-reveal>
+                <div class="when">2025.11 - 2026.02</div>
+                <div class="what">
+                  <h4>JD Explore Research · Multimodal Foundation Model (Algorithm Intern)</h4>
+                  <p class="meta">From data to training to video evaluation pipeline for a multimodal base model.</p>
+                </div>
+              </li>
+            </ol>
+
+            <h3>Selected Research</h3>
+            <div class="cv-cards" aria-label="Selected research">
+              <article class="cv-card">
+                <h4>VideoThinker · Tool-Reasoning for Long Video Understanding</h4>
+                <p class="meta">2025.09 - 2026.01</p>
+                <p class="muted">Agentic VideoLLM with built-in retrieval + zoom; LLM-guided tool reasoning trajectories transformed into interleaved frame reasoning data; +6.8%~10.6% on long-video benchmarks.</p>
+              </article>
+              <article class="cv-card">
+                <h4>Adaptive Program Reasoning for Video Tool Use</h4>
+                <p class="meta">2025.03 - 2025.09</p>
+                <p class="muted">Workflow-based tool calling; model adaptively chooses VideoLLM vs generating executable code workflows to call external modules.</p>
+              </article>
+              <article class="cv-card">
+                <h4>Multimodal Video Cognition Benchmarking</h4>
+                <p class="meta">2024.06 - 2025.01</p>
+                <p class="muted">Automated evaluation tasks for symbolic/abstract video cognition; fine-grained difficulty controls; guidance for model development.</p>
+              </article>
+              <article class="cv-card">
+                <h4>Instruction Data Evolution (MCTS)</h4>
+                <p class="meta">2024.03 - 2024.06</p>
+                <p class="muted">Heuristic search in prompt space via Monte Carlo Tree Search to synthesize high-quality instructions; stable gains on open benchmarks.</p>
+              </article>
+              <article class="cv-card">
+                <h4>Reasoning Distillation to Smaller LMs</h4>
+                <p class="meta">2023.10 - 2024.02</p>
+                <p class="muted">Hybrid distillation using PoT/CoT signals; improved 7B model numerical reasoning beyond some GPT-3.5-turbo baselines.</p>
+              </article>
+            </div>
+
+            <h3>Publications</h3>
+            <ol class="pub-list" aria-label="Publications">
+              <li>Mixed Distillation Helps Smaller Language Model Better Reasoning. (EMNLP 2024 Findings, 1)</li>
+              <li>Instruction Evolution with Monte Carlo Tree Search for point-wise Control. (EMNLP 2024 Findings, 1)</li>
+              <li>VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning. (CVPR 2026 Findings, 1)</li>
+              <li>Teaching Small Language Models Reasoning through Counterfactual Distillation. (EMNLP 2024 Main, 3)</li>
+              <li>RelationAdapter: Learning and Transferring Visual Relation with Diffusion Transformers. (NeurIPS 2025 Main, 3)</li>
+              <li>VCBench: A Controllable Benchmark for Symbolic and Abstract Challenges in VC. (Under Review, 1)</li>
+              <li>VideoPro: Adaptive Program Reasoning for Long Video Understanding. (ACL 2026, 1)</li>
+              <li>Iterative Zoom-In: Temporal Interval Exploration for Long Video Understanding. (Under Review/ARR, 1)</li>
+            </ol>
           </div>
         </div>
       </section>
@@ -292,11 +408,28 @@
             >
             <a
               class="button button-ghost"
-              href="https://no-518.github.io/no-518-blog/"
-              target="_blank"
-              rel="noreferrer"
-              >Blog</a
+              href="/archives/"
+              >Archives</a
             >
+          </div>
+        </div>
+      </section>
+
+      <section id="posts" class="section" aria-label="Posts">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <h2>Posts</h2>
+            <p class="muted">Latest updates from my blog.</p>
+          </div>
+
+          <div class="posts" data-reveal>
+            <ol id="postList" class="post-list" aria-label="Latest posts"></ol>
+            <p id="postListEmpty" class="muted" hidden>
+              No posts yet. Add some posts and regenerate the blog.
+            </p>
+            <div class="post-actions">
+              <a class="button button-ghost" href="/archives/">View all posts</a>
+            </div>
           </div>
         </div>
       </section>
@@ -305,7 +438,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="small">
-          (c) <span id="year">2026</span> Yubang Wang. Built as a zero-build static
+          (c) <span id="year">2026</span> lichenglin. Built as a zero-build static
           site.
         </p>
         <p class="small">
