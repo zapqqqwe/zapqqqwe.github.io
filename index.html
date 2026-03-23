@@ -36,7 +36,6 @@
         <nav class="nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#posts">Posts</a>
-          <a href="#publications">Publications</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
           <a href="/archives/">Archives</a>
@@ -188,39 +187,50 @@
 
           <div class="cv" data-reveal>
             <h3>Internships</h3>
-            <ol class="timeline" aria-label="Internships timeline">
-              <li class="timeline-item" data-reveal>
-                <div class="when">2023.06 - 2023.09</div>
-                <div class="what">
-                  <h4>Alibaba Quark · Offline System Strategy (Algorithm Intern)</h4>
-                  <p class="meta">Modeling “first-hand experience” signals for offline webpages; BERT-based text model; 75% accuracy on offline test set.</p>
+            <div class="internships" aria-label="Internships">
+              <article class="internship">
+                <div class="internship-head">
+                  <div class="internship-title">Alibaba Quark · Offline System Strategy</div>
+                  <div class="internship-when">2023.06 - 2023.09</div>
                 </div>
-              </li>
+                <ul class="internship-points">
+                  <li>Built “first-hand experience” modeling from 0→1 for offline webpages.</li>
+                  <li>BERT-based text model; achieved 75% accuracy on offline test set.</li>
+                </ul>
+              </article>
 
-              <li class="timeline-item" data-reveal>
-                <div class="when">2023.10 - 2024.01</div>
-                <div class="what">
-                  <h4>Alibaba Aicheng · Enterprise Intelligence (Algorithm Intern)</h4>
-                  <p class="meta">SFT pipeline and evaluation; data augmentation and quality control; improved Qwen-14B to match Qwen-70B on internal eval; int8 deployment.</p>
+              <article class="internship">
+                <div class="internship-head">
+                  <div class="internship-title">Alibaba Aicheng · Enterprise Intelligence</div>
+                  <div class="internship-when">2023.10 - 2024.01</div>
                 </div>
-              </li>
+                <ul class="internship-points">
+                  <li>Worked on SFT pipeline, data augmentation, and evaluation.</li>
+                  <li>Improved Qwen-14B to match Qwen-70B on internal eval; int8 deployment.</li>
+                </ul>
+              </article>
 
-              <li class="timeline-item" data-reveal>
-                <div class="when">2025.02 - 2025.06</div>
-                <div class="what">
-                  <h4>ByteDance CapCut/Jianying · Video Intent Understanding (Algorithm Intern)</h4>
-                  <p class="meta">Built multimodal intent understanding pipeline; prompt engineering; decoding strategies to reduce hallucinations; visual token pruning.</p>
+              <article class="internship">
+                <div class="internship-head">
+                  <div class="internship-title">ByteDance CapCut/Jianying · Video Intent Understanding</div>
+                  <div class="internship-when">2025.02 - 2025.06</div>
                 </div>
-              </li>
+                <ul class="internship-points">
+                  <li>Built multimodal intent understanding pipeline and prompt engineering.</li>
+                  <li>Explored decoding strategies to reduce hallucinations; visual token pruning.</li>
+                </ul>
+              </article>
 
-              <li class="timeline-item" data-reveal>
-                <div class="when">2025.11 - 2026.02</div>
-                <div class="what">
-                  <h4>JD Explore Research · Multimodal Foundation Model (Algorithm Intern)</h4>
-                  <p class="meta">From data to training to video evaluation pipeline for a multimodal base model.</p>
+              <article class="internship">
+                <div class="internship-head">
+                  <div class="internship-title">JD Explore Research · Multimodal Foundation Model</div>
+                  <div class="internship-when">2025.11 - 2026.02</div>
                 </div>
-              </li>
-            </ol>
+                <ul class="internship-points">
+                  <li>Owned data→training→video evaluation pipeline for a multimodal base model.</li>
+                </ul>
+              </article>
+            </div>
 
             <h3>Selected Research</h3>
             <div class="cv-cards" aria-label="Selected research">
@@ -251,73 +261,7 @@
               </article>
             </div>
 
-            <h3>Publications</h3>
-            <ol class="pub-list" aria-label="Publications">
-              <li>Mixed Distillation Helps Smaller Language Model Better Reasoning. (EMNLP 2024 Findings, 1)</li>
-              <li>Instruction Evolution with Monte Carlo Tree Search for point-wise Control. (EMNLP 2024 Findings, 1)</li>
-              <li>VideoThinker: Building Agentic VideoLLMs with LLM-Guided Tool Reasoning. (CVPR 2026 Findings, 1)</li>
-              <li>Teaching Small Language Models Reasoning through Counterfactual Distillation. (EMNLP 2024 Main, 3)</li>
-              <li>RelationAdapter: Learning and Transferring Visual Relation with Diffusion Transformers. (NeurIPS 2025 Main, 3)</li>
-              <li>VCBench: A Controllable Benchmark for Symbolic and Abstract Challenges in VC. (Under Review, 1)</li>
-              <li>VideoPro: Adaptive Program Reasoning for Long Video Understanding. (ACL 2026, 1)</li>
-              <li>Iterative Zoom-In: Temporal Interval Exploration for Long Video Understanding. (Under Review/ARR, 1)</li>
-            </ol>
           </div>
-        </div>
-      </section>
-
-      <section id="publications" class="section" aria-label="Publications">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <h2>Publications</h2>
-            <p class="muted">Selected papers and preprints.</p>
-          </div>
-
-          <ol class="timeline" aria-label="Publications list">
-            <li class="timeline-item publication-item" data-reveal>
-              <div class="when publication-when">
-                <span>2026</span>
-                <div class="publication-links" aria-label="Publication links">
-                  <a
-                    class="button button-ghost"
-                    href="https://arxiv.org/abs/2603.06739"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Paper</a
-                  >
-                  <span class="button button-ghost button-disabled" aria-disabled="true">
-                    Project
-                  </span>
-                </div>
-              </div>
-              <div class="what publication-layout">
-                <div class="publication-copy">
-                  <div class="publication-head">
-                    <h3 class="publication-title">
-                      ResearchEnvBench: Benchmarking Agents on Environment
-                      Synthesis for Research Code Execution
-                    </h3>
-                  </div>
-                  <p>
-                    <strong>Yubang Wang</strong>, Chenxi Zhang, Bowen Chen, Zezheng
-                    Huai, Zihao Dai, Xinchi Chen, Yuxin Wang, Yining Zheng, Jingjing
-                    Gong, Xipeng Qiu
-                  </p>
-                  <p class="meta">arXiv preprint, published March 6, 2026</p>
-                </div>
-
-                <div class="paper-figure paper-figure-thumb">
-                  <img
-                    src="./assets/researchenvbench-figure1-thumb.jpg"
-                    alt="Overview of an agentic closed-loop process for resolving research environments."
-                    width="1920"
-                    height="1080"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </li>
-          </ol>
         </div>
       </section>
 
@@ -360,10 +304,10 @@
         <div class="container contact-box" data-reveal>
           <h2>Contact</h2>
           <p class="contact-text">
-            The best way to reach me is email: wybang518 at gmail dot com.
+            The best way to reach me is email: 12421234@zju.edu.cn
           </p>
           <div class="contact-row">
-            <span class="button">wybang518 at gmail dot com</span>
+            <span class="button">12421234@zju.edu.cn</span>
             <a
               class="button button-ghost"
               href="https://github.com/zapqqqwe"
