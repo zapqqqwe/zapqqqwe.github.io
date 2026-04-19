@@ -37,13 +37,13 @@ a:hover {
 }
 
 .wrapper {
-  width: 980px;
+  width: min(1200px, calc(100vw - 64px));
   margin: 0 auto;
 }
 
 header {
   position: fixed;
-  width: 250px;
+  width: 280px;
   padding-top: 3.5rem;
   text-align: center;
 }
@@ -108,7 +108,7 @@ h1 {
 }
 
 section {
-  width: 670px;
+  width: min(860px, calc(100% - 320px));
   float: right;
   padding-top: 3.5rem;
   padding-bottom: 64px;
