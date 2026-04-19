@@ -1,13 +1,12 @@
 :root {
-  --bg: #f7f7f4;
-  --card: #ffffff;
-  --text: #22252a;
-  --muted: #5c6670;
-  --line: #e4e7eb;
-  --theme: #043361;
-  --theme-soft: #edf3fb;
-  --badge: #154c8a;
-  --shadow: 0 18px 40px rgba(17, 30, 52, 0.08);
+  --bg: #f8f7f2;
+  --paper: #fffdf8;
+  --text: #1e2730;
+  --muted: #66717c;
+  --line: #dde3e8;
+  --theme: #123b67;
+  --link: #2468a2;
+  --shadow: 0 16px 34px rgba(20, 33, 52, 0.06);
 }
 
 * {
@@ -21,64 +20,61 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  font-family: Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", serif;
+  font-family: Georgia, "Times New Roman", serif;
   line-height: 1.7;
   background:
-    radial-gradient(circle at top left, rgba(4, 51, 97, 0.08), transparent 24%),
-    linear-gradient(180deg, #fafaf8 0%, #f4f4f1 100%);
+    radial-gradient(circle at 10% 10%, rgba(18, 59, 103, 0.08), transparent 24%),
+    linear-gradient(180deg, #fbfaf6 0%, #f5f3ec 100%);
 }
 
 a {
-  color: #2676b8;
+  color: var(--link);
   text-decoration: none;
 }
 
 a:hover {
-  color: #0d5f98;
   text-decoration: underline;
 }
 
 .wrapper {
-  width: 960px;
+  width: 980px;
   margin: 0 auto;
 }
 
 header {
   position: fixed;
-  width: 240px;
-  padding-top: 3.6rem;
+  width: 250px;
+  padding-top: 3.5rem;
   text-align: center;
 }
 
 .avatar {
   display: grid;
   place-items: center;
-  width: 138px;
-  height: 138px;
+  width: 132px;
+  height: 132px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #154c8a, #043361);
+  background: linear-gradient(145deg, #1d568f, #123b67);
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   box-shadow: var(--shadow);
 }
 
 h1 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--theme);
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.12;
 }
 
 .name-zh {
   margin-bottom: 10px;
   color: var(--theme);
-  font-size: 1.75rem;
-  font-weight: 500;
+  font-size: 1.3rem;
   line-height: 1.1;
 }
 
@@ -94,39 +90,34 @@ h1 {
 .profile-links {
   display: flex;
   justify-content: center;
-  gap: 10px 16px;
   flex-wrap: wrap;
+  gap: 10px 14px;
   margin: 16px 0 18px;
 }
 
 .profile-links a {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--card);
+  padding: 4px 0;
 }
 
 .summary {
   padding: 14px 16px;
   border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  background: rgba(255, 253, 248, 0.82);
   text-align: left;
 }
 
 section {
-  width: 660px;
+  width: 670px;
   float: right;
-  padding-top: 3.6rem;
-  padding-bottom: 60px;
+  padding-top: 3.5rem;
+  padding-bottom: 64px;
 }
 
 h2 {
   margin: 0 0 16px;
   color: var(--theme);
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -138,7 +129,7 @@ h2 small {
 p,
 ul,
 ol {
-  margin: 0 0 16px;
+  margin: 0 0 15px;
 }
 
 strong {
@@ -146,21 +137,27 @@ strong {
   font-weight: 600;
 }
 
-.entry-list {
-  margin-bottom: 30px;
+.entry-list,
+.publication-list {
+  margin: 0 0 34px;
+}
+
+.entry-item,
+.publication-item {
+  padding: 16px 0 18px;
+  border-top: 1px solid var(--line);
+}
+
+.entry-item:first-child,
+.publication-item:first-child {
+  border-top: 0;
+  padding-top: 0;
 }
 
 .entry-item {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
-  padding: 18px 0;
-  border-top: 1px solid var(--line);
-}
-
-.entry-item:first-child {
-  padding-top: 0;
-  border-top: 0;
+  gap: 20px;
 }
 
 .entry-main {
@@ -171,7 +168,7 @@ strong {
 .entry-main h3 {
   margin: 0 0 6px;
   color: var(--theme);
-  font-size: 1.08rem;
+  font-size: 1.06rem;
   font-weight: 600;
 }
 
@@ -184,104 +181,80 @@ strong {
 }
 
 .entry-meta {
-  min-width: 132px;
+  min-width: 136px;
   color: var(--muted);
   text-align: right;
-  font-size: 0.95rem;
   white-space: nowrap;
+  font-size: 0.95rem;
 }
 
 .detail ul {
   padding-left: 18px;
-  color: var(--text);
 }
 
 .detail li {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
-.pub-note {
-  margin-top: 12px;
-  color: var(--theme);
-  font-size: 0.96rem;
-}
-
-.publications {
-  margin: 20px 0 34px;
-}
-
-.bibliography {
+.publication-list {
   padding: 0;
   list-style: none;
 }
 
-.bibliography li {
-  margin-bottom: 16px;
-}
-
-.pub-row {
+.publication-head {
   display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  padding: 16px 18px;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--card);
-  box-shadow: 0 8px 20px rgba(17, 30, 52, 0.04);
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+  font-size: 0.92rem;
 }
 
-.pub-abbr {
-  width: 88px;
-  flex-shrink: 0;
-}
-
-.badge {
-  display: inline-block;
-  min-width: 70px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: var(--badge);
-  color: #fff;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
-.pub-content {
-  flex: 1;
-}
-
-.pub-content .title {
-  margin-bottom: 6px;
+.venue {
   color: var(--theme);
-  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.45;
 }
 
-.pub-content .meta {
+.author-rank {
   color: var(--muted);
-  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
-@media print, screen and (max-width: 960px) {
+.publication-title {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.publication-title a {
+  color: inherit;
+}
+
+.publication-links {
+  margin-top: 7px;
+  font-size: 0.92rem;
+}
+
+.publication-links a {
+  color: var(--link);
+}
+
+@media print, screen and (max-width: 980px) {
   .wrapper {
     width: auto;
     margin: 0;
-    padding: 0 18px;
+    padding: 0 20px;
   }
 
   header,
   section {
-    float: none;
     position: static;
+    float: none;
     width: auto;
   }
 
   header {
     padding-top: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   section {
@@ -290,40 +263,32 @@ strong {
 }
 
 @media print, screen and (max-width: 640px) {
-  body {
-    padding: 0 0 24px;
-  }
-
   .wrapper {
     padding: 0 14px;
   }
 
+  .avatar {
+    width: 104px;
+    height: 104px;
+    font-size: 1.9rem;
+  }
+
   h1 {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .name-zh {
-    font-size: 1.45rem;
-  }
-
-  .avatar {
-    width: 108px;
-    height: 108px;
-    font-size: 2rem;
+    font-size: 1.15rem;
   }
 
   .entry-item,
-  .pub-row {
+  .publication-head {
     display: block;
   }
 
-  .entry-meta {
-    margin-top: 8px;
+  .entry-meta,
+  .author-rank {
+    margin-top: 6px;
     text-align: left;
-  }
-
-  .pub-abbr {
-    width: auto;
-    margin-bottom: 10px;
   }
 }
