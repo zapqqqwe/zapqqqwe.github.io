@@ -1,366 +1,134 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Personal homepage of Chenglin Li (Lichenglin), researcher in Multimodal and agents."
+      content="Personal homepage of Chenglin Li, focused on multimodal models and agentic systems."
     />
-    <title>Chenglin Li | Researcher in Multimodal and agents</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <title>Chenglin Li</title>
     <link rel="stylesheet" href="./style.css" />
-    <script>
-      // Prevent reveal styles from hiding content when JS is disabled.
-      document.documentElement.classList.remove("no-js");
-      document.documentElement.classList.add("js");
-    </script>
-    <script defer src="./script.js"></script>
   </head>
-
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+    <main class="page">
+      <section class="hero">
+        <div class="avatar" aria-hidden="true">CL</div>
 
-    <header class="site-header" data-reveal>
-      <div class="container header-inner">
-        <div class="brand">
-          <h1 class="name">lichenglin</h1>
-          <p class="subtitle">Blog · Notes · Research</p>
-        </div>
+        <div class="hero-body">
+          <p class="eyebrow">Personal Homepage</p>
+          <h1>Chenglin Li</h1>
+          <p class="name-zh">李成林</p>
+          <p class="role">Researcher in multimodal models, video understanding, and agentic systems</p>
 
-        <nav class="nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#posts">Posts</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-          <a href="/archives/">Archives</a>
-        </nav>
-
-        <div class="social" aria-label="Social links">
-          <span class="icon-link" aria-label="Email">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                d="M4.5 6.75h15A1.5 1.5 0 0 1 21 8.25v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.25v-9a1.5 1.5 0 0 1 1.5-1.5Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linejoin="round"
-              />
-              <path
-                d="m4.8 8.2 7.2 5.2 7.2-5.2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
-
-          <a
-            class="icon-link"
-            href="https://github.com/zapqqqwe"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                fill="currentColor"
-                d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8 2.7 3.4 1.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0C17.9 6 19 6.3 19 6.3c.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"
-              />
-            </svg>
-          </a>
-
-          <a
-            class="icon-link"
-            href="https://scholar.google.com/citations?user=7LlS58IAAAAJ&hl=zh-CN"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Google Scholar"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                d="M12 3 2 9l10 6 10-6-10-6Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M6 12.2v4.2c0 .8 2.7 2.6 6 2.6s6-1.8 6-2.6v-4.2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-
-          <a
-            class="icon-link"
-            href="/archives/"
-            aria-label="Blog"
-          >
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                d="M7 4.5h7.8L19 8.7v10.8H7V4.5Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M14.8 4.6v4.1h4.1"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M10 12h6M10 15h6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main id="content">
-      <section id="about" class="section" aria-label="About">
-        <div class="container about-grid">
-          <div class="avatar-wrap" data-reveal>
-            <img
-              class="avatar"
-              src="./assets/avatar.svg"
-              alt="Avatar illustration"
-              width="220"
-              height="220"
-              loading="eager"
-            />
-            <p class="avatar-caption">
-              Location: live on earth. I welcome collaboration on embodied AI and
-              agentic systems.
-            </p>
-          </div>
-
-          <div class="about-text" data-reveal>
-            <h2>About</h2>
-            <p>
-              I am <strong>Chenglin Li (李成林)</strong>. My research focuses on large
-              language models, video understanding, and agentic systems.
-            </p>
-
-            <ul class="info-list" aria-label="Quick info">
-              <li>
-                <strong>Email:</strong>
-                <a href="mailto:lichenglin@sii.edu.cn">lichenglin@sii.edu.cn</a>
-              </li>
-              <li><strong>Phone:</strong> 15264518356</li>
-              <li><strong>Born:</strong> 2001.03</li>
-            </ul>
-
-            <p class="muted">
-              I also write notes and research updates on my blog.
-            </p>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="cv" class="section" aria-label="CV">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <h2>CV</h2>
-            <p class="muted">Education, internships, and research.</p>
-          </div>
-
-          <div class="cv" data-reveal>
-            <h3>Internships</h3>
-            <div class="internships" aria-label="Internships">
-              <article class="internship">
-                <div class="internship-head">
-                  <div class="internship-title">Alibaba Quark · Offline System Strategy</div>
-                  <div class="internship-when">2023.06 - 2023.09</div>
-                </div>
-                <ul class="internship-points">
-                  <li>Built “first-hand experience” modeling from 0→1 for offline webpages.</li>
-                  <li>BERT-based text model; achieved 75% accuracy on offline test set.</li>
-                </ul>
-              </article>
-
-              <article class="internship">
-                <div class="internship-head">
-                  <div class="internship-title">Alibaba Aicheng · Enterprise Intelligence</div>
-                  <div class="internship-when">2023.10 - 2024.01</div>
-                </div>
-                <ul class="internship-points">
-                  <li>Worked on SFT pipeline, data augmentation, and evaluation.</li>
-                  <li>Improved Qwen-14B to match Qwen-70B on internal eval; int8 deployment.</li>
-                </ul>
-              </article>
-
-              <article class="internship">
-                <div class="internship-head">
-                  <div class="internship-title">ByteDance CapCut/Jianying · Video Intent Understanding</div>
-                  <div class="internship-when">2025.02 - 2025.06</div>
-                </div>
-                <ul class="internship-points">
-                  <li>Built multimodal intent understanding pipeline and prompt engineering.</li>
-                  <li>Explored decoding strategies to reduce hallucinations; visual token pruning.</li>
-                </ul>
-              </article>
-
-              <article class="internship">
-                <div class="internship-head">
-                  <div class="internship-title">JD Explore Research · Multimodal Foundation Model</div>
-                  <div class="internship-when">2025.11 - 2026.02</div>
-                </div>
-                <ul class="internship-points">
-                  <li>Owned data→training→video evaluation pipeline for a multimodal base model.</li>
-                </ul>
-              </article>
-            </div>
-
-            <h3>Selected Research</h3>
-            <div class="cv-cards" aria-label="Selected research">
-              <article class="cv-card">
-                <h4>VideoThinker · Tool-Reasoning for Long Video Understanding</h4>
-                <p class="meta">2025.09 - 2026.01</p>
-                <p class="muted">Agentic VideoLLM with built-in retrieval + zoom; LLM-guided tool reasoning trajectories transformed into interleaved frame reasoning data; +6.8%~10.6% on long-video benchmarks.</p>
-              </article>
-              <article class="cv-card">
-                <h4>Adaptive Program Reasoning for Video Tool Use</h4>
-                <p class="meta">2025.03 - 2025.09</p>
-                <p class="muted">Workflow-based tool calling; model adaptively chooses VideoLLM vs generating executable code workflows to call external modules.</p>
-              </article>
-              <article class="cv-card">
-                <h4>Multimodal Video Cognition Benchmarking</h4>
-                <p class="meta">2024.06 - 2025.01</p>
-                <p class="muted">Automated evaluation tasks for symbolic/abstract video cognition; fine-grained difficulty controls; guidance for model development.</p>
-              </article>
-              <article class="cv-card">
-                <h4>Instruction Data Evolution (MCTS)</h4>
-                <p class="meta">2024.03 - 2024.06</p>
-                <p class="muted">Heuristic search in prompt space via Monte Carlo Tree Search to synthesize high-quality instructions; stable gains on open benchmarks.</p>
-              </article>
-              <article class="cv-card">
-                <h4>Reasoning Distillation to Smaller LMs</h4>
-                <p class="meta">2023.10 - 2024.02</p>
-                <p class="muted">Hybrid distillation using PoT/CoT signals; improved 7B model numerical reasoning beyond some GPT-3.5-turbo baselines.</p>
-              </article>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="education" class="section" aria-label="Education">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <h2>Education</h2>
-            <p class="muted">Academic background.</p>
-          </div>
-
-          <ol class="timeline" aria-label="Education timeline">
-            <li class="timeline-item" data-reveal>
-              <div class="when">2019.09 - 2023.06</div>
-              <div class="what">
-                <h3>B.S. in Computer Science and Technology</h3>
-                <p class="meta">Northeastern University</p>
-              </div>
-            </li>
-
-            <li class="timeline-item" data-reveal>
-              <div class="when">2023.09 - 2025.03</div>
-              <div class="what">
-                <h3>M.S. (Full-time), AI direction</h3>
-                <p class="meta">Zhejiang University</p>
-              </div>
-            </li>
-
-            <li class="timeline-item" data-reveal>
-              <div class="when">2025.09 - 2028.03</div>
-              <div class="what">
-                <h3>Ph.D. (Full-time), Artificial Intelligence</h3>
-                <p class="meta">Zhejiang University & Shanghai Innovation Institute</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section id="contact" class="section" aria-label="Contact">
-        <div class="container contact-box" data-reveal>
-          <h2>Contact</h2>
-          <p class="contact-text">
-            The best way to reach me is email: 12421234@zju.edu.cn
-          </p>
-          <div class="contact-row">
-            <span class="button">12421234@zju.edu.cn</span>
+          <div class="links" aria-label="External links">
+            <a href="mailto:lichenglin@sii.edu.cn">lichenglin@sii.edu.cn</a>
+            <a href="https://github.com/zapqqqwe" target="_blank" rel="noreferrer">GitHub</a>
             <a
-              class="button button-ghost"
-              href="https://github.com/zapqqqwe"
-              target="_blank"
-              rel="noreferrer"
-              >GitHub</a
-            >
-            <a
-              class="button button-ghost"
-              href="https://scholar.google.com/citations?user=7LlS58IAAAAJ&hl=zh-CN"
+              href="https://scholar.google.com/citations?user=7LlS58IAAAAJ&amp;hl=zh-CN"
               target="_blank"
               rel="noreferrer"
               >Google Scholar</a
             >
-            <a
-              class="button button-ghost"
-              href="/archives/"
-              >Archives</a
-            >
           </div>
         </div>
       </section>
 
-      <section id="posts" class="section" aria-label="Posts">
-        <div class="container">
-          <div class="section-head" data-reveal>
-            <h2>Posts</h2>
-            <p class="muted">Latest updates from my blog.</p>
-          </div>
+      <section class="section">
+        <h2>About</h2>
+        <p>
+          I work on large language models, multimodal reasoning, and tool-using
+          agents. My recent focus is long-video understanding, multimodal
+          evaluation, and systems that combine language reasoning with external
+          tools.
+        </p>
+        <p>
+          I am open to research collaboration and engineering work around
+          embodied AI, multimodal foundation models, and agentic workflows.
+        </p>
+      </section>
 
-          <div class="posts" data-reveal>
-            <ol id="postList" class="post-list" aria-label="Latest posts"></ol>
-            <p id="postListEmpty" class="muted" hidden>
-              No posts yet. Add some posts and regenerate the blog.
-            </p>
-            <div class="post-actions">
-              <a class="button button-ghost" href="/archives/">View all posts</a>
-            </div>
+      <section class="section">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Ph.D. in Artificial Intelligence</h3>
+            <span>2025.09 - 2028.03</span>
           </div>
+          <p>Zhejiang University &amp; Shanghai Innovation Institute</p>
         </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>M.S. in Artificial Intelligence</h3>
+            <span>2023.09 - 2025.03</span>
+          </div>
+          <p>Zhejiang University</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>B.S. in Computer Science and Technology</h3>
+            <span>2019.09 - 2023.06</span>
+          </div>
+          <p>Northeastern University</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Selected Experience</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>JD Explore Research · Multimodal Foundation Model</h3>
+            <span>2025.11 - 2026.02</span>
+          </div>
+          <p>Owned the data, training, and video evaluation pipeline for a multimodal base model.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>ByteDance CapCut/Jianying · Video Intent Understanding</h3>
+            <span>2025.02 - 2025.06</span>
+          </div>
+          <p>Built multimodal intent understanding workflows and explored decoding strategies for hallucination reduction.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Alibaba Aicheng · Enterprise Intelligence</h3>
+            <span>2023.10 - 2024.01</span>
+          </div>
+          <p>Worked on SFT pipelines, data augmentation, evaluation, and efficient deployment.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Selected Research</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>VideoThinker</h3>
+            <span>2025.09 - 2026.01</span>
+          </div>
+          <p>Tool-reasoning methods for long-video understanding with retrieval and zoom-based evidence access.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Adaptive Program Reasoning for Video Tool Use</h3>
+            <span>2025.03 - 2025.09</span>
+          </div>
+          <p>Designed workflows that switch between VideoLLM reasoning and executable tool pipelines.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <h3>Multimodal Video Cognition Benchmarking</h3>
+            <span>2024.06 - 2025.01</span>
+          </div>
+          <p>Built evaluation tasks for symbolic and abstract video cognition with controllable difficulty.</p>
+        </div>
+      </section>
+
+      <section class="section contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:12421234@zju.edu.cn">12421234@zju.edu.cn</a></p>
+        <p>Email: <a href="mailto:lichenglin@sii.edu.cn">lichenglin@sii.edu.cn</a></p>
+        <p>Phone: 15264518356</p>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p class="small">
-          (c) <span id="year">2026</span> lichenglin. Built as a zero-build static
-          site.
-        </p>
-        <p class="small">
-          <a href="#about">Back to top</a>
-        </p>
-      </div>
-    </footer>
   </body>
 </html>
