@@ -49,17 +49,14 @@ header {
 }
 
 .avatar {
-  display: grid;
-  place-items: center;
-  width: 132px;
-  height: 132px;
+  display: block;
+  width: 118px;
+  height: 118px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #1d568f, #123b67);
-  color: #fff;
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
   box-shadow: var(--shadow);
 }
 
@@ -268,9 +265,8 @@ strong {
   }
 
   .avatar {
-    width: 104px;
-    height: 104px;
-    font-size: 1.9rem;
+    width: 92px;
+    height: 92px;
   }
 
   h1 {
